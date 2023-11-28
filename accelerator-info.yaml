@@ -1,0 +1,29 @@
+id: 5a4ef680-6ec2-4cd1-913c-210833869cb5
+timestamp: 2023-11-28T15:28:37.054Z
+source: TAP-GUI
+username: tfynes-pivotal
+accelerator:
+  name: where-for-dinner
+fragments:
+  - name: build-wrapper-maven
+  - name: tap-workload
+options:
+  bsGitBranch: main
+  projectName: wfda4
+  workloadNamespace: default
+  serviceNamespace: default
+  workloadType: web
+  gatewayType: tapscg
+  msgBrokerType: rabbitmq
+  dynamicMsgBroker: false
+  msgbrokerName: wfd-rmq
+  dbType: h2
+  cacheType: inmemCache
+  enableSecurity: false
+  appWorkloadURL: http://where-for-dinner.a4.fynesy.com
+  ployglotWorkloads: false
+  nativeBuild: false
+  includeBuildToolWrapper: true
+  gatewayName: wfd14
+  numRabbitMQClusterNodes: 1
+  bsGitRepository: github.com?owner=tfynes-pivotal&repo=wfd14
