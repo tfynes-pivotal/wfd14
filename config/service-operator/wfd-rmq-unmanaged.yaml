@@ -1,0 +1,13 @@
+apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+kind: ClassClaim
+metadata:
+  annotations:
+    classclaims.services.apps.tanzu.vmware.com/xrd-name: xrabbitmqclusters.bitnami.messaging.tanzu.vmware.com
+  creationTimestamp: "2023-11-28T16:26:07Z"
+  finalizers:
+  - classclaims.services.apps.tanzu.vmware.com/provision-finalizer
+  name: wfd-rmq
+  namespace: default
+spec:
+  classRef:
+    name: rabbitmq-unmanaged
